@@ -10,10 +10,8 @@ import {
 
 function About() {
   return (
-    <div className="mt-5"> 
+    <div className="mt-4 about-bg min-vh-100">
       <Container className="page">
-        <h2 className="text-center mb-4">About Me</h2>
-
         {/* Profile Summary */}
         <Card className="mb-4">
           <Card.Body>
@@ -28,8 +26,8 @@ function About() {
           </Card.Body>
         </Card>
 
-        <Row>
-          {/* LEFT COLUMN – EDUCATION (UPDATED STYLE) */}
+        <Row className="about ">
+          {/* LEFT COLUMN */}
           <Col md={6}>
             <h4 className="mb-3">Education</h4>
 
@@ -57,71 +55,47 @@ function About() {
             <div className="education-card">
               <div className="education-title">10th (SSC) – 84.00%</div>
               <div className="education-school">
-                pShree D.H.G.P. Medium & Higher Secondary School, Newasa
+                Shree D.H.G.P. Medium & Higher Secondary School, Newasa
               </div>
               <div className="education-year">2019 – 2020</div>
             </div>
+
+            {/* Resume */}
+            <Card className="resume-card mb-4">
+              <Card.Body className="text-center">
+                <Button variant="primary" href="resume.jpg" download>
+                  Download Resume
+                </Button>
+              </Card.Body>
+            </Card>
           </Col>
 
           {/* RIGHT COLUMN */}
           <Col md={6}>
-            {/* Project */}
-            <Card className="mb-3">
-              <Card.Body>
-                <h5>
-                  <FaProjectDiagram className="icon" /> Project
-                </h5>
-                <p>
-                  <strong>Text File Compression using Huffman Coding</strong>
-                  <br />
-                  Implemented using Python and Data Structures. Reduced file
-                  size up to 58%.
-                </p>
-              </Card.Body>
-            </Card>
-
-            {/* Certifications */}
             <Card className="mb-3">
               <Card.Body>
                 <h5>
                   <FaCertificate className="icon" /> Certifications
                 </h5>
                 <p>
-                  • Programming in Java – NPTEL
-                  <br />
-                  • Database Management System – NPTEL
-                  <br />
-                  • Compiler Design – NPTEL
-                  <br />
-                  • Python Basics – Infosys
-                  <br />
-                  • HTML & CSS – Infosys
-                  <br />• Google Cybersecurity – Coursera
+                  • Programming in Java – NPTEL <br />
+                  • DBMS – NPTEL <br />
+                  • Compiler Design – NPTEL <br />
+                  • Python Basics – Infosys <br />
+                  • HTML & CSS – Infosys <br />• Google Cybersecurity – Coursera
                 </p>
               </Card.Body>
             </Card>
 
-            {/* Achievements */}
             <Card className="mb-3">
               <Card.Body>
                 <h5>
                   <FaTrophy className="icon" /> Achievements
                 </h5>
                 <p>
-                  • HackerRank C – 4 Star
-                  <br />
-                  • HackerRank Java – 3 Star
-                  <br />• HackerRank SQL – 3 Star
+                  • HackerRank C – 4 Star <br />
+                  • HackerRank Java – 3 Star <br />• HackerRank SQL – 3 Star
                 </p>
-              </Card.Body>
-            </Card>
-
-            {/* Resume */}
-            <Card className="mb-3">
-              <Card.Body>
-                <Button variant="primary" href="resume.jpg" download>
-                  Download Resume
-                </Button>
               </Card.Body>
             </Card>
           </Col>

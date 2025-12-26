@@ -23,7 +23,7 @@ function Skills() {
           </div>
         </Col>
 
-        <Col md={4} className="mb-4">
+        <Col md={4} className="mb-4"style={{background:"black"}}>
           <div className="skill-box">
             <FaTools className="skill-icon" />
             <h5>Tools & Libraries</h5>

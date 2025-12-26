@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+Resume_P (2).pdf
+README.md
+public/Resume.pdf
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
